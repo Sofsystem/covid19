@@ -289,7 +289,7 @@ Vue.component('graph', {
           responsive: true,
           toImageButtonOptions: {
             format: 'png', // one of png, svg, jpeg, webp
-            filename: 'Covid Trends',
+            filename: 'Covid19 Algeria ',
             height: 800,
             width: 1200,
             scale: 1 // Multiply title/legend/axis/canvas sizes by this factor
@@ -715,7 +715,7 @@ pullData(selectedData, selectedRegion, updateSelectedCountries = true) {
 
       let url = baseUrl + queryUrl.toString();
 
-      window.history.replaceState( {} , 'Covid Trends', '?'+queryUrl.toString() );
+      window.history.replaceState( {} , 'Covidi19 Algeria', '?'+queryUrl.toString() );
 
       this.copyToClipboard(url);
       //alert('Here\'s a custom URL to pull up this view:\n' + url);
