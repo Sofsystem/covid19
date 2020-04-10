@@ -65,8 +65,6 @@
         <div v-if="covidData.length > 0" id="nav">
 
           <div class="navelement">
-            <img v-if="paused" @click="play" src="icons/play.svg" style="width: 3rem;">
-            <img v-if="!paused" @click="play" src="icons/pause.svg" style="width: 3rem;">
           </div>
 
           <div class="navelement">
@@ -90,7 +88,6 @@
 
         </div>
 
-        <div v-if="!firstLoad && covidData.length == 0" id="nodata"><span>Not enough data for these parameters.</span></div>
 
 
       </div>
